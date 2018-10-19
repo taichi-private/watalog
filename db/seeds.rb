@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do |i|
+  Article.create(
+    title: "タイトル#{i}",
+    text: "テキスト#{i}",
+    description: "ここはデスクリプション#{i}",
+    keyword: "kokoha #{i}",
+    state: "published"
+  )
+  Tag.create(
+    name: "りんご#{i}"
+  )
+  ArticleTag.create(
+    article_id: "1",
+    tag_id: "#{i}"
+  )
+end  

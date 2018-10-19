@@ -3,4 +3,5 @@
   p = article.text
   p = article.description
   p = article.keyword
-  
+  - article.tags.each do |tag|
+    p = tag.name
