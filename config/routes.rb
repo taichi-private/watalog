@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root to: 'top#index'
   resources :article, only: %i[index show]
+  resources :tag, only: %i[index show]
 end
