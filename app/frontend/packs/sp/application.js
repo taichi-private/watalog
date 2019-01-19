@@ -1,1 +1,1 @@
-import '../stylesheets/application';
+import './../../stylesheets/sp/application';
